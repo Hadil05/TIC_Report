@@ -1,0 +1,107 @@
+body {
+    margin: 0; /* To remove the margin in right and left of the page */
+    background-color: rgba(255, 255, 255, 0.783);
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin-top: 0%;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.sujet {
+    color: #4164c4;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.memb a {
+    color: #4164c4;
+    text-decoration: none;
+    font-size: 0.9;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 850px;
+    
+}
+
+.memb a:hover {
+    color: #5f1cfccb;
+}
+
+#top_pic {
+    background-image: url('./picture/bg_pic3.png');
+    margin-top: 0;
+    background-size: cover; /* adjust the size of the background image to fit the div */
+    background-position: center;  /*center the background image within the div */
+    background-attachment: fixed;
+}
+
+.titre {
+    padding: 70px 0px 20px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: #fefefece;
+    display: flex;
+    font-weight: 500;
+}
+.titre span {
+    color: #566fb2e0;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.menu a{
+    width: fit-content;
+    min-height: 100vh;
+    position: relative;
+    padding: 14px 32px; /*pour definir l'ecart du remplissage au quatre cotes*/
+    background: #38425f;
+    color: #ffffff;
+    background-clip: border-box;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 10%;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #601cfc;
+}
+
+.menu a:hover::before {
+    /*pour appliquer le hover l'option*/
+    left: 125%;
+    transform: scale(1); /*pour les coordonnees dans l'espace*/
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.menu a::before {
+    content: attr(data-tooltip);
+    border-radius: 10px;
+    color: #f9ebcb;
+    position: absolute;
+    white-space: nowrap;
+
+    left: 60%;
+    transform: scale(0. 5);
+    opacity: 0;
+    transition: all .5s ease;
+}
