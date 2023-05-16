@@ -96,12 +96,12 @@
                                    Communication: Une autre notion fondamentale d’un réseau est la communication, qui permet l’échange de données entre les processus (programmes en exécution).
 
                              </p>
-                             <h2> 2) Les caractéristiques de base d’un réseau sont: </h2>
+                       <h2> 2) Les caractéristiques de base d’un réseau sont: </h2>
                              <p> 
                                 la topologie (physique et logique), le débit (en bits/s), la distance maximale (ou portée) et le nombre de nœuds maximum que l’on peut interconnecter.
 
                              </p>
-                             <h2>3) Quelques terminologies en réseau : </h2>
+                     <h2>3) Quelques terminologies en réseau : </h2>
                              <p> 
                                 <br>Station de travail :
                                  Toute machine capable d’envoyer des données vers les réseaux. 
@@ -115,7 +115,7 @@
                                         Mesure une quantité de données numériques (bits) transmises par seconde.
 
                              </p>
-                             <h2>4) Éléments d'un reseau : </h2>
+                        <h2>4) Éléments d'un reseau : </h2>
                              <p> 
                                 <br> ordinateurs en réseau.
                                 <br>  logiciels de communication.
@@ -123,29 +123,40 @@
                                 <br>Les équipements d'interconnexion
                                 
                              </p>
-                             <h2>5) Classification des réseaux :</h2>
+                     <h2>5) Classification des réseaux :</h2>
                              <p> 
-                               <br><strong style="padding-left: 20px;">1. Par portée l’envergure:</strong>
+                               <br><strong >1. Par portée l’envergure:</strong>
                                     <strong>LAN :</strong>
                                     <br>- LAN est un réseau local d'entreprise avec une portée limitée (quelques centaines de mètres).
                                     <br>-Il est considéré comme un réseau privé et connecte généralement moins de 100 machines
                                     <br>- Les vitesses de transmission vont de 10 à 100 Mb/s.
-                                    <strong>MAN :</strong><br>
+                                    <br> <strong>MAN :</strong><br>
                                     -MAN est un réseau métropolitain ou urbain qui relie plusieurs LAN dans une même entreprise ou ville, sur une distance de 10 à 25 km.
                                     Le câble co-axial est le support physique le plus utilisé dans ce type de réseau.
-                                    <strong>WAN :</strong><br>
+                                    <br><strong>WAN :</strong><br>
                                     -Les WAN sont des réseaux étendus et publics qui assurent la transmission de données sur de longues distances à l'échelle d'un pays ou de la planète.
                                   Il existe d'autres types de réseaux tels que les PAN, WPAN et WLAN, SAN.
                                 <br><strong>2. L’ouverture : </strong>
                                   <br> -Les réseaux peuvent être classés par portée ou par les services qu'ils offrent, notamment en réseaux intranet, extranet et internet (publics).
                                <br><strong>3. Les supports de connexion :</strong>
-
-                               <br><strong></strong>
-
-                               <br><strong></strong>
+                               <br> - Les réseaux filaires utilisent différents types de câbles tels que le coaxial, le câble en paires torsadées, la fibre optique et les lignes téléphoniques.
+                               <br> - Les réseaux sans fil utilisent des moyens tels que les ondes radios, les ondes infrarouges, les satellites et le Bluetooth.
+                               <br><strong>4. Le type d’organisation :</strong>
+                               <br>- Les réseaux Peer to Peer permettent à chaque ordinateur de partager ses ressources, mais sont faiblement sécurisés.
+                                <br>- Les réseaux Client/Serveur ont des postes clients et des serveurs dédiés à des tâches spécialisées, avec un administrateur pour gérer le réseau. 
 
                             </p>
-                    
+                        <h2> 6 ) Le type de topologie :</h2>
+                        <p>
+                            <br><strong>1.Les réseaux en bus :</strong>
+                         <br> Le réseau en bus relie les machines avec un câble coaxial en série, mais n'est plus adapté aujourd'hui en raison de sa limitation de débit à 10 Mbits/s.
+                            <br><strong>2.Les réseaux en étoile :</strong>
+                          <br>Les stations sont connectées à un commutateur central (switch ou hub), qui renvoie les données vers tous les ports réseau ou uniquement au destinataire.
+                          <br><strong>3.Les réseaux en anneau : </strong>
+                         <br> Le réseau Token Ring utilise une boucle où les ordinateurs communiquent chacun à leur tour grâce à une méthode d'accès à "jeton", où les données transitent de station en station en suivant l'anneau et en régénérant le signal à chaque station.
+                          <br><strong>4. Maillée :</strong>
+                          <br>Internet utilise une topologie maillée pour assurer la stabilité en cas de panne de nœud et utilise plusieurs chemins de transfert, ce qui en fait une structure réseau hybride.
+                        </p>
                         </div>
 
                 </div>
@@ -432,6 +443,30 @@
                                      <p>
                                         
                                      </p>
+                                     <h2>11)</h2>
+                                     <p>
+                                        
+                                     </p>
+                                     <h2>12)Créer un dépôt Git à partir d’un répertoire existant</h2>
+                                     <p>
+                                       
+                                        Lorsqu'on démarre avec Git, il est fréquent d'avoir des projets existants stockés localement ou sur un serveur distant, et on souhaite les intégrer à un système de gestion de version. Pour cela, on peut importer tous les fichiers d'un projet dans Git. Dans cette leçon, je vais créer un répertoire appelé "projet-git" sur mon bureau, contenant deux fichiers vides : "fichier1.txt" et "README.txt". Ce répertoire sera utilisé comme base pour les exemples à venir.
+                                     <!--image -->
+                                    <br>Lors de l'initialisation d'un dépôt Git avec "git init", Git indique que le dépôt est vide. En utilisant la commande "git status", nous pouvons vérifier l'état des fichiers. Dans cet exemple, deux fichiers, "README.txt" et "fichier1.txt", sont considérés comme non suivis ("untracked"). Aucun fichier n'a été validé ou ajouté pour le moment. La commande fournit également des informations sur la branche actuelle ("master"). Pour ajouter des fichiers à l'index, nous utilisons "git add", en spécifiant un nom de fichier, un répertoire ou un "fileglob" pour ajouter des fichiers correspondant à un schéma. Les "fileglobs" utilisent des caractères spéciaux tels que * et ? pour représenter des modèles de correspondance. Par exemple, "git add *.txt" ajoute tous les fichiers avec l'extension .txt dans le projet, quel que soit leur nom.
+                                    
+                                </p>
+                                     <h2>13)Cloner un dépôt Git</h2>
+                                     <p>
+                                        <strong>Créez un repo sur GitHub:</strong>
+                                        <!--image-->
+                                        <strong>Après :</strong>
+                                        <!--image-->
+                                        <strong>Si on vérifier notre repo sur GitHub, on peut voir les deux fichiers :</strong>
+                                        <!--image-->
+                                     </p>
+
+
+
                                  
                                 </div>
                             </div>
@@ -466,7 +501,7 @@
             <li> chaptre 
                 <ul>
                     <li>cheurfi khadidja 222231455818</li>
-                   <li>NOM4</li>  
+                   <li>Hemen Oussama 222231568602</li>  
                     </ul>
             </li>
             <li> chaptre 
