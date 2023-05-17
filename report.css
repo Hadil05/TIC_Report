@@ -12,7 +12,7 @@ body {
 header {
     background-color: #f0f0f0;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 999;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,6 @@ header {
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 850px;
-    
 }
 
 .memb a:hover {
@@ -50,7 +49,7 @@ header {
 }
 
 .titre {
-    padding: 90px 0px 20px 190px;
+    padding: 70px 0px 20px 190px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2em;
     color: #fefefece;
@@ -114,14 +113,14 @@ header {
     margin-top: 200px;
   }
   
-  .paragraphe .card {
+.paragraphe .card {
     border: none;
     background: none;
     border-bottom: 1px dashed azure;
    
   }
   
-  .paragraphe .card .card-header {
+.paragraphe .card .card-header {
     padding: 0px;
     border: none;
     background: none;
@@ -129,14 +128,13 @@ header {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    
   }
   
-  .paragraphe .card .card-header:hover {
+.paragraphe .card .card-header:hover {
       background: rgba(233, 30, 99, 0.1);
       padding-left: 10px;
   }
-  .paragraphe .card .card-header .faq-title {
+.paragraphe .card .card-header .faq-title {
     width: 100%;
     text-align: left;
     padding: 20px 30px 0 40px;
@@ -152,16 +150,15 @@ header {
     cursor: pointer; 
     
   }
-  .paragraphe .mb-0{
+.paragraphe .mb-0{
     text-decoration: none;
   }
   
-  .paragraphe .card .card-header .faq-title .badge {
+.paragraphe .card .card-header .faq-title .badge {
     display: inline-block;
     width: 50px;
     height: 50px;
     line-height: 14px;
-     /*float: left;*/
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -173,18 +170,18 @@ header {
     padding-top: 20px;
   }
   
-  .paragraphe .card .card-body {
+.paragraphe .card .card-body {
     padding: 0 0 0 2rem ;
     position: relative;
     border-top: 1px solid azure;
     background-color:rgb(255, 233, 233);
-    max-height: 0;/*pour hide the texe*/
+    max-height: 0;/*pour cacher le texte*/
     overflow: hidden;
     transition: max-height 650ms ;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
   }
-  .card-body::before {
+
+.card-body::before {
       content:"" ;
       position: absolute;
       width: .6rem;
@@ -193,12 +190,9 @@ header {
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-
-
   }
 
-  
-  .paragraphe .card .card-body p {
+.paragraphe .card .card-body p {
     font-family:Georgia, 'Times New Roman', Times, serif;
      margin-bottom: 14px;
     font-size: 1.3rem;
@@ -206,27 +200,24 @@ header {
     padding: 0 0 0 2rem ;
     text-indent: 30px;
     word-spacing: 2px;
-    line-height: 32px; /*pour espase entre les ligne de texte*/
+    line-height: 32px; /*pour espacer entre les ligne du texte*/
+}
 
-  }
 .paragraphe .card .card-body li{
     font-size: 1.3rem;
 }
-  .paragraphe .card .card-body h2 {
+.paragraphe .card .card-body h2 {
      padding:20px  0 0 30px  ;
      color: #E91E63;
-     
-     
-  }
+}
 
 
    
-  .card:target .card-body  {
+.card:target .card-body  {
       min-height: 50rem;
-      max-height: 1000rem; /*pour modifai l'espase de ecritutre de resume*/
-
+      max-height: 1000rem; /*pour modifier l'espase de l'ecritutre du resume*/
   }
- /*les noms des etidents*/
+ /*les noms des etudiants*/
  .members{
     margin: 50px 0 60px 150px;
     background-color: #284081;
@@ -254,3 +245,16 @@ header {
     letter-spacing: 1px;
     font-size: 18px;
 }
+
+.members ol span {
+    color: #e25a95d2;
+    font-weight: 900;
+    font-size: larger;
+}
+/*.fin a {
+    color: #4164c4;
+    text-decoration: none;
+    font-size: 0.9;
+    font-weight: 500;
+    font-family: 'Mina', sans-serif;
+}*/
