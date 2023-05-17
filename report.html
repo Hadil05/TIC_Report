@@ -656,6 +656,11 @@
    <!--<div class="fin">
         <a href="#top_pic">Programme </a>
     </div>-->
+    <script>
+        if (window.location.hash) {
+            history.replaceState(null, null, window.location.pathname);
+        }
+    </script>
 </body>
 
 </html>
